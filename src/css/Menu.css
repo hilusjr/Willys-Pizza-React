@@ -30,7 +30,7 @@
 @supports (backdrop-filter: blur(0.5rem)) {
   .menu {
     background-color: hsl(0 0% 0% / 0.3);
-    backdrop-filter: blur(0.25rem);
+    backdrop-filter: blur(1rem);
   }
 }
 

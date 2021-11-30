@@ -6,7 +6,7 @@ import pizzeriaData from '../json/content.json'
 function HotDeals() {
   return (
     <section className="hot-deals-page">
-      <div>Hot deals - this week</div>
+      <div>Hot deals</div>
       <div className="hot-deals-container">
         {pizzeriaData.hotDeals.map((deal, i) => (
           <HotDeal

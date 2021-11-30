@@ -13,11 +13,16 @@ function Navbar() {
   return (
     <>
       <div className="toggle-menu" onClick={toggleMenu}>
-        X
+        <i className="fa-solid fa-bars"></i>
       </div>
       <div className="navbar" data-visible={isVisible.toString()}>
         {navBtns.map((navBtn) => (
-          <Navbtn key={navBtn} content={navBtn} />
+          <Navbtn
+            key={navBtn}
+            content={navBtn}
+            isVisible={isVisible}
+            setVisible={setVisible}
+          />
         ))}
       </div>
     </>

@@ -1,0 +1,119 @@
+.menu-page {
+  width: 100%;
+  padding: 0 0 2rem 0;
+  background-image: url(../img/menubg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-page > div:nth-child(1) {
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 7rem 0 2rem 2rem !important;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Comforter', cursive;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 100rem;
+  height: calc(100vmin - 20.7rem);
+  overflow-y: scroll;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background-color: white;
+  padding-top: 3.5rem;
+}
+
+.menu-navbar {
+  position: absolute;
+  margin: -3.5rem 0 0 0;
+  width: 90%;
+  max-width: 100rem;
+  display: flex;
+  background: rgb(255, 245, 38);
+  border-radius: 1rem 1rem 0 0;
+  background: linear-gradient(
+    164deg,
+    rgba(255, 245, 38, 1) 0%,
+    rgba(240, 137, 21, 1) 50%,
+    rgba(221, 0, 0, 1) 100%
+  );
+}
+
+.menu-navbar div {
+  width: 25%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.menu-item > .menu-item-col:first-child {
+  width: 70%;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.menu-item-col {
+  width: min(10em, 30%);
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.menu-item-name {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  margin-bottom: 0.2rem;
+}
+
+.menu-item-description {
+  color: rgb(59, 59, 59);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.menu-item-price {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: right;
+  margin: auto 0;
+}
+
+.menu-item-border {
+  width: 98%;
+  margin: 0 1%;
+  height: 2px;
+  background: rgb(255, 245, 38);
+  background: linear-gradient(
+    164deg,
+    rgba(255, 245, 38, 1) 0%,
+    rgba(240, 137, 21, 1) 50%,
+    rgba(221, 0, 0, 1) 100%
+  );
+}
+
+@media (min-width: 60em) {
+  .menu-page > div:nth-child(1) {
+    font-size: 5rem;
+    padding: 8rem 0 2rem 2rem;
+  }
+}

@@ -1,0 +1,152 @@
+{
+    "pizzas": [
+        { 
+            "name": "margherita", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more", 
+            "small": 11,
+            "large": 20 },
+        { 
+            "name": "classica", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 14,
+            "large": 25 },
+        { 
+            "name": "capriciossa", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 12,
+            "large": 22 },
+        { 
+            "name": "hawaiian", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 17,
+            "large": 27 }, 
+        { 
+            "name": "chicken", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 18,
+            "large": 30 }, 
+        { 
+            "name": "pepperoni", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 16,
+            "large": 25 },
+        { 
+            "name": "meat", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 17,
+            "large": 28 },
+        { 
+            "name": "supreme", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 18,
+            "large": 30 },
+        { 
+            "name": "neapolitan", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 14, 
+            "large": 24 },   
+        { 
+            "name": "sicilian", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 16, 
+            "large": 26 },
+        { 
+            "name": "rustica", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 13,
+            "large": 22 },
+        { 
+            "name": "seafood", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 20,
+            "large": 32 },
+        { 
+            "name": "vegetariana", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 13,
+            "large": 22 },   
+        { 
+            "name": "al padellino",
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 17,
+            "large": 28 },   
+        { 
+            "name": "carbonara", 
+            "description" : "ingredient here, another ingredient here and yet another ingredient here",
+            "small": 16,
+            "large": 25 }
+    ],
+
+    "pasta": [
+        {
+            "name": "Lasagne",
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 17,
+            "large": 28  
+        },
+        {
+            "name": "Vegetarian lasagne",
+            "description" : "ingredient here, another ingredient here and yet another ingredient here and maybe one more",
+            "small": 16,
+            "large": 26  
+        }
+    ],
+
+    "hotDeals": [
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 20 
+        },
+        { 
+            "title": "Ipsum Lorem", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
+            "price": 21 
+        },
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 22 
+        },
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 20 
+        },
+        { 
+            "title": "Ipsum Lorem", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
+            "price": 21 
+        },
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 22 
+        },
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 20 
+        },
+        { 
+            "title": "Ipsum Lorem", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
+            "price": 21 
+        },
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 22 
+        },
+        { 
+            "title": "Lorem Ipsum", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            "price": 20 
+        },
+        { 
+            "title": "Ipsum Lorem", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
+            "price": 21 
+        }
+    ]
+}

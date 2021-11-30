@@ -1,0 +1,53 @@
+.start-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/mainpagebg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.start-page h1 {
+  padding: 20vmax 0 10vmax 0;
+  font-size: 20vmin;
+  font-family: 'Comforter', cursive;
+  color: white;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-align: center;
+}
+
+.start-page p {
+  padding: 10vmax 10vmin 0 10vmin;
+  font-size: 4vmax;
+  font-weight: 600;
+  color: white;
+  text-align: justify;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
+}
+
+@media only screen and (min-width: 550px) {
+  .start-page h1 {
+    padding: 20vmin 0 20vmax 0;
+    font-size: 15vmin;
+  }
+
+  .start-page p {
+    padding: 10vmax 10vmax;
+    font-size: 4vmax;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .start-page h1 {
+    padding: 20vmin 0 30vmin 0;
+    font-size: 15vmin;
+  }
+
+  .start-page p {
+    padding: 0 20vmax;
+    font-size: 4vmin;
+    text-align: center;
+  }
+}

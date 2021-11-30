@@ -1,0 +1,151 @@
+.hot-deals-page {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.hot-deals-page > div:nth-child(1) {
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3rem 0 0 2rem;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Comforter", cursive;
+}
+
+.hot-deals-container > div:nth-child(1),
+.hot-deals-container > div:nth-child(5),
+.hot-deals-container > div:nth-child(7) {
+  background-color: rgb(243, 231, 2);
+}
+
+.hot-deals-container > div:nth-child(2),
+.hot-deals-container > div:nth-child(8),
+.hot-deals-container > div:nth-child(11) {
+  background-color: rgb(255, 153, 36);
+  color: white;
+}
+
+.hot-deals-container > div:nth-child(4),
+.hot-deals-container > div:nth-child(6) {
+  background-color: rgb(255, 36, 36);
+  color: white;
+}
+
+.hot-deal {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 5px 14px -2px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 14px -2px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 14px -2px rgba(66, 68, 90, 1);
+}
+
+.hot-deal-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.hot-deal-desc {
+  margin-bottom: 0.5rem;
+}
+
+.hot-deal-price {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+/* ----------------------------------- GRID TEMPLATE -------------------------------------- */
+
+.hot-deals-container {
+  width: 90%;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine"
+    "ten"
+    "eleven";
+}
+
+@media (min-width: 60em) {
+  .hot-deals-page > div:nth-child(1) {
+    font-size: 5rem;
+    padding: 8rem 0 2rem 2rem;
+  }
+  .hot-deals-container {
+    padding: 2rem 0 7rem 0;
+    grid-template-areas:
+      "one two two three four"
+      "five five six seven four"
+      "eight nine ten seven eleven";
+  }
+  .hot-deals-container > div:nth-child(1) {
+    grid-area: one;
+  }
+  .hot-deals-container > div:nth-child(2) {
+    grid-area: two;
+  }
+  .hot-deals-container > div:nth-child(3) {
+    grid-area: three;
+  }
+  .hot-deals-container > div:nth-child(4) {
+    grid-area: four;
+  }
+  .hot-deals-container > div:nth-child(5) {
+    grid-area: five;
+  }
+  .hot-deals-container > div:nth-child(6) {
+    grid-area: six;
+  }
+  .hot-deals-container > div:nth-child(7) {
+    grid-area: seven;
+  }
+  .hot-deals-container > div:nth-child(8) {
+    grid-area: eight;
+  }
+  .hot-deals-container > div:nth-child(9) {
+    grid-area: nine;
+  }
+  .hot-deals-container > div:nth-child(10) {
+    grid-area: ten;
+  }
+  .hot-deals-container > div:nth-child(11) {
+    grid-area: eleven;
+  }
+
+  .hot-deal {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .hot-deal-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hot-deal-desc {
+    margin-bottom: 1rem;
+  }
+
+  .hot-deal-price {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: right;
+    margin-top: auto;
+  }
+}

@@ -3,11 +3,8 @@ import React from 'react'
 import MenuItem from './MenuItem'
 
 function MenuList({ category }) {
-  //   const [isVisible, setList] = useState([])
-
   return (
-    <>
-      {/* <button onClick={() => console.log(items)}></button> */}
+    <div className="menu-list">
       {category.map((item, i) => (
         <MenuItem
           key={i}
@@ -17,7 +14,7 @@ function MenuList({ category }) {
           large={item.large}
         />
       ))}
-    </>
+    </div>
   )
 }
 

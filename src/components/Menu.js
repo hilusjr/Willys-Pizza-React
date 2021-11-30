@@ -5,8 +5,6 @@ import MenuList from './MenuList'
 import pizzeriaData from '../json/content.json'
 
 function Menu() {
-  // const [isVisible, setVisible] = useState(true)
-
   const [category, setCategory] = useState(pizzeriaData.pizzas)
 
   return (

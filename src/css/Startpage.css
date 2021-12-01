@@ -27,15 +27,15 @@
   text-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 768px) {
   .start-page h1 {
-    padding: 20vmin 0 20vmax 0;
+    padding: 20vmin 0 20vmin 0;
     font-size: 15vmin;
   }
 
   .start-page p {
-    padding: 10vmax 10vmax;
-    font-size: 4vmax;
+    padding: 0 10vmax;
+    font-size: min(4vmax, 2rem);
   }
 }
 

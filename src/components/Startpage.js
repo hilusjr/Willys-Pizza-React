@@ -6,7 +6,7 @@ function Startpage() {
     <div className="start-page">
       <h1>Willy's Pizza</h1>
       <p>
-        Let us take you on an adventure to an abroad kitchen and discover your
+        Let us take you on an adventure to the abroad kitchen and discover your
         new favorite taste!
       </p>
     </div>

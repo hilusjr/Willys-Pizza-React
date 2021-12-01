@@ -1,6 +1,11 @@
 import React from 'react'
 
 function MenuItem(props) {
+  // const description = () => {
+  //   if (!props.desc) return
+  //   return <div className="menu-item-description">{props.desc}</div>
+  // }
+
   return (
     <>
       <div className="menu-item">

@@ -3,16 +3,12 @@ import Navbtn from './Navbtn'
 import '../css/Navbar.css'
 
 function Navbar() {
-  const [isVisible, setVisible] = useState(false)
-  const toggleMenu = () => {
-    setVisible(!isVisible)
-  }
-
   const navBtns = ['start', 'hot deals', 'menu', 'about', 'contact']
+  const [isVisible, setVisible] = useState(false)
 
   return (
     <>
-      <div className="toggle-menu" onClick={toggleMenu}>
+      <div className="toggle-menu" onClick={() => setVisible(!isVisible)}>
         <i className="fa-solid fa-bars"></i>
       </div>
       <div className="navbar" data-visible={isVisible.toString()}>

@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 
 function Navbtn({ content, isVisible, setVisible }) {
+  const closeMobileMenu = () => {
+    setVisible(!isVisible)
+  }
+
   return (
     <Link
       to={`${content.replace(/\s+/g, '-')}-page`}
@@ -9,7 +13,12 @@ function Navbtn({ content, isVisible, setVisible }) {
       spy={true}
       smooth={true}
     >
-      <div className="nav-btn" onClick={() => setVisible(!isVisible)}>
+      <div
+        className="nav-btn"
+        onClick={() => {
+          closeMobileMenu()
+        }}
+      >
         {content}
       </div>
     </Link>

@@ -68,5 +68,19 @@
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     white-space: nowrap;
+    background: white;
+    background: linear-gradient(to right, #ffaa00 0%, #ff0000 50%, #ffffff 42%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    background-position-x: 100%;
+    transition: all 0.4s;
+  }
+  .nav-btn-active {
+    background-position-x: 0%;
+  }
+  .nav-btn:hover {
+    background-position-x: 0%;
+    cursor: pointer;
   }
 }

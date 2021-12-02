@@ -40,6 +40,7 @@
   display: flex;
   background: rgb(255, 245, 38);
   border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 5px 10px black;
   background: linear-gradient(
     164deg,
     rgba(255, 245, 38, 1) 0%,
@@ -91,6 +92,7 @@
     color: white;
     text-shadow: 2px 2px 3px black;
   }
+
   .menu-item {
     flex-direction: column;
   }
@@ -157,6 +159,11 @@
 
   .menu-navbar div {
     font-size: 1.5rem;
+  }
+
+  .menu-navbar div:hover {
+    background-color: hsl(0 0% 0% / 0.1);
+    cursor: pointer;
   }
 
   .menu-item-name {

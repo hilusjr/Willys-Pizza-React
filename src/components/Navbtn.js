@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-scroll'
 
-function Navbtn({ content, isVisible, setVisible }) {
-  const closeMobileMenu = () => {
-    setVisible(!isVisible)
+function Navbtn({ content, closeMobileMenu, setActive, isActive }) {
+  const element = content
+
+  const activeBtn = {
+    backgroundPositionX: '0%',
+  }
+  const nonActiveBtn = {
+    backgroundPositionX: '100%',
   }
 
   return (
@@ -17,7 +22,9 @@ function Navbtn({ content, isVisible, setVisible }) {
         className="nav-btn"
         onClick={() => {
           closeMobileMenu()
+          setActive(element)
         }}
+        style={element === isActive ? activeBtn : nonActiveBtn}
       >
         {content}
       </div>

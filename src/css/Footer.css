@@ -1,0 +1,58 @@
+footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+footer a:hover {
+  animation: jump 0.5s ease-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0vmin);
+  }
+  10%,
+  40% {
+    transform: translateY(-0.5vmin) scale(1.2);
+  }
+  50% {
+    transform: translateY(0.15vmin);
+  }
+  60% {
+    transform: translateY(-0.1vmin);
+  }
+  70% {
+    transform: translateY(0.05vmin);
+  }
+  80% {
+    transform: translateY(-0.03vmin);
+  }
+  90% {
+    transform: translateY(0.01vmin);
+  }
+  100% {
+    transform: translateY(0vmin) scale(1);
+  }
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 2rem 0 0 0;
+}
+
+@media (min-width: 50em) {
+  footer p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+}

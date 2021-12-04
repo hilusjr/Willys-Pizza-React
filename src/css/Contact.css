@@ -1,0 +1,78 @@
+.contact-page {
+  width: 100%;
+  /* height: min(100vh); */
+  padding-bottom: 2rem;
+  background-color: black;
+  color: white;
+}
+
+.contact-page h1 {
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 2rem !important;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: 'Comforter', cursive;
+}
+
+.contact-page h2 {
+  width: 90%;
+  max-width: 100rem;
+  margin: 1rem auto;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.contact-page h3 {
+  width: 90%;
+  max-width: 100rem;
+  margin: 1rem auto;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.contact-page div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.contact-page-button {
+  display: block;
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    164deg,
+    rgba(255, 245, 38, 1) 0%,
+    rgba(240, 137, 21, 1) 50%,
+    rgba(221, 0, 0, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 50em) {
+  .contact-page h1 {
+    font-size: 5rem;
+    padding: 8rem 0 2rem 2rem !important;
+  }
+  .contact-page h2 {
+    font-size: 1.5rem;
+  }
+  .contact-page div {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact-page-button {
+    width: 20%;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+  .contact-page-button:hover {
+    cursor: pointer;
+  }
+}

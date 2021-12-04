@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Contact.css'
 
-function Contact() {
+function Contact({ displayLogin }) {
   return (
     <div className="contact-page">
       <h1>Contact</h1>
@@ -16,12 +16,17 @@ function Contact() {
       </h3>
       <h2 style={{ marginTop: '3rem' }}>Trying to order food online?</h2>
       <h3>
-        Create or log in to already existing account to order our products EASLY
-        and get a chance to get even more HOT DEALS
+        Create or log into an already existing account to order our products
+        EASELY and get a chance to get even more HOT DEALS
       </h3>
       <div>
         <button className="contact-page-button sign-up-button">Sign up</button>
-        <button className="contact-page-button log-in-button">Log in</button>
+        <button
+          className="contact-page-button log-in-button"
+          onClick={displayLogin}
+        >
+          Log in
+        </button>
       </div>
     </div>
   )

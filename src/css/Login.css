@@ -5,28 +5,25 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.835);
+  z-index: 9999;
 }
 
 .log-in-card {
   position: fixed;
-  top: 20%;
-  left: 40%;
-  width: 20%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   padding: 3rem 1rem 0 1rem;
   background-color: white;
   box-sizing: border-box;
-  border-radius: 1rem;
+  overflow-y: scroll;
 }
 .log-in-card i {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 1.5rem;
-}
-
-.log-in-card i:hover,
-.log-in-card button {
-  cursor: pointer;
+  font-size: 2rem;
 }
 
 .log-in-card h1 {
@@ -46,7 +43,7 @@
   padding: 0.5rem 1rem;
   box-sizing: border-box;
   overflow-x: scroll;
-  margin-bottom: 1rem;
+  margin: 0.1rem 0 1rem 0;
 }
 
 .log-in-card button {
@@ -59,4 +56,23 @@
     rgba(221, 0, 0, 1) 100%
   );
   border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .log-in-card {
+    top: 10%;
+    left: calc(50% - 15rem);
+    width: 30rem;
+    height: auto;
+    max-height: 70vh;
+    border-radius: 1rem;
+  }
+  .log-in-card i {
+    font-size: 1.5rem;
+  }
+
+  .log-in-card i:hover,
+  .log-in-card button {
+    cursor: pointer;
+  }
 }

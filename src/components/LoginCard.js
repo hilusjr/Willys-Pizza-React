@@ -3,16 +3,25 @@ import Login from '../components/Login'
 import Signup from '../components/Signup'
 import '../css/Login.css'
 
-function LoginCard({ loginDisplayed, displayLogin }) {
+function LoginCard({
+  cardVisible,
+  displayCard,
+  loginDisplayed,
+  displaySignup,
+  displayLogin,
+}) {
   return (
     <div
       className="log-in-bg"
-      style={loginDisplayed ? { display: 'block' } : { display: 'none' }}
+      style={cardVisible ? { display: 'block' } : { display: 'none' }}
     >
       <div className="log-in-card">
-        <i className="fa-solid fa-xmark" onClick={displayLogin}></i>
-        <Login />
-        <Signup />
+        <i className="fa-solid fa-xmark" onClick={displayCard}></i>
+        {loginDisplayed ? (
+          <Login displaySignup={displaySignup} />
+        ) : (
+          <Signup displayLogin={displayLogin} />
+        )}
       </div>
     </div>
   )

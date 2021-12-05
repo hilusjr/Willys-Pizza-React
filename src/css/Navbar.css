@@ -7,7 +7,7 @@
   aspect-ratio: 1;
   box-sizing: border-box;
   text-align: center;
-  z-index: 9999;
+  z-index: 2000;
   color: white;
   border-radius: 1rem;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Login() {
+function Login({ displaySignup }) {
   return (
     <>
       <h1>Log in</h1>
@@ -10,7 +10,7 @@ function Login() {
       <input type="password"></input>
       <button>Log in</button>
       <p>Don't have an account?</p>
-      <button>Sign up</button>
+      <button onClick={displaySignup}>Sign up</button>
     </>
   )
 }

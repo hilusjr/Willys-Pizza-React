@@ -11,20 +11,37 @@ import LoginCard from './components/LoginCard'
 import Order from './components/Order'
 
 function App() {
-  const [loginDisplayed, setLoginDisplayed] = useState(false)
-  const displayLogin = () => {
-    setLoginDisplayed(!loginDisplayed)
+  const [cardVisible, setCardVisible] = useState(false)
+  const [loginDisplayed, setLoginDisplayed] = useState(true)
+
+  const displayCard = () => {
+    setCardVisible(!cardVisible)
+    displayLogin()
   }
+
+  const displayLogin = () => {
+    setLoginDisplayed(true)
+  }
+  const displaySignup = () => {
+    setLoginDisplayed(false)
+  }
+
   return (
     <>
-      <Navbar displayLogin={displayLogin} />
+      <Navbar displayCard={displayCard} />
       <Startpage />
       <HotDeals />
       <Menu />
       <About />
-      <Contact displayLogin={displayLogin} />
+      <Contact displayCard={displayCard} displaySignup={displaySignup} />
       <Footer />
-      <LoginCard loginDisplayed={loginDisplayed} displayLogin={displayLogin} />
+      <LoginCard
+        cardVisible={cardVisible}
+        displayCard={displayCard}
+        loginDisplayed={loginDisplayed}
+        displaySignup={displaySignup}
+        displayLogin={displayLogin}
+      />
       <Order />
     </>
   )

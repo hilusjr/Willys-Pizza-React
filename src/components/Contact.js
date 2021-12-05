@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Contact.css'
 
-function Contact({ displayLogin }) {
+function Contact({ displayCard, displaySignup }) {
   return (
     <div className="contact-page">
       <h1>Contact</h1>
@@ -20,10 +20,18 @@ function Contact({ displayLogin }) {
         EASELY and get a chance to get even more HOT DEALS
       </h3>
       <div>
-        <button className="contact-page-button sign-up-button">Sign up</button>
+        <button
+          className="contact-page-button sign-up-button"
+          onClick={() => {
+            displayCard()
+            displaySignup()
+          }}
+        >
+          Sign up
+        </button>
         <button
           className="contact-page-button log-in-button"
-          onClick={displayLogin}
+          onClick={displayCard}
         >
           Log in
         </button>

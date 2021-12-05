@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbtn from './Navbtn'
 import '../css/Navbar.css'
 
-function Navbar({ displayLogin }) {
+function Navbar({ displayCard }) {
   const navBtns = ['start', 'hot deals', 'menu', 'about', 'contact']
   const [isVisible, setVisible] = useState(false)
   const [isActive, setActive] = useState('start')
@@ -17,7 +17,13 @@ function Navbar({ displayLogin }) {
       <div className="navbar" data-visible={isVisible}>
         <div className="nav-account">
           <div className="nav-order-btn nav-acc-btn">order</div>
-          <div className="nav-log-in nav-acc-btn" onClick={displayLogin}>
+          <div
+            className="nav-log-in nav-acc-btn"
+            onClick={() => {
+              displayCard()
+              closeMobileMenu()
+            }}
+          >
             Log in
           </div>
           <div className="nav-profile-icon">

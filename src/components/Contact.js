@@ -30,11 +30,11 @@ function Contact({ displayCard, displaySignup }) {
       >
         Trying to order food online?
       </h2>
-      <h3 style={loggedIn ? { display: 'none' } : { display: 'initial' }}>
+      <h3 style={loggedIn ? { display: 'none' } : { display: 'block' }}>
         Create or log into an already existing account to order our products
         EASELY and get a chance to get even more HOT DEALS
       </h3>
-      <div style={loggedIn ? { display: 'none' } : { display: 'initial' }}>
+      <div>
         <button
           className="contact-page-button sign-up-button"
           onClick={() => {

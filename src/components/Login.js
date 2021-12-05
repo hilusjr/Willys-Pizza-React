@@ -9,8 +9,6 @@ function Login({ displaySignup, displayCard }) {
     const auth = getAuth()
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user
         displayCard()
         // ...
       })

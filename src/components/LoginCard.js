@@ -18,7 +18,7 @@ function LoginCard({
       <div className="log-in-card">
         <i className="fa-solid fa-xmark" onClick={displayCard}></i>
         {loginDisplayed ? (
-          <Login displaySignup={displaySignup} />
+          <Login displaySignup={displaySignup} displayCard={displayCard} />
         ) : (
           <Signup displayLogin={displayLogin} />
         )}

@@ -41,7 +41,9 @@ function Navbar({ displayCard, loggedIn, displayProfile, userName }) {
           >
             <i className="fa-solid fa-user"></i>
           </div>
-          <div className="nav-profile-name">{userName}</div>
+          <div className="nav-profile-name" onClick={displayProfile}>
+            {loggedIn ? userName : ''}
+          </div>
         </div>
         <div className="navigation">
           {navBtns.map((navBtn) => (

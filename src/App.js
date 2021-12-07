@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
-// import { getDatabase, ref, child, get } from 'firebase/database'
 import './css/index.css'
 import Navbar from './components/Navbar'
 import Startpage from './components/Startpage'
@@ -17,8 +16,6 @@ function App() {
   const [cardVisible, setCardVisible] = useState(false)
   const [profileVisible, setProfileVisible] = useState(false)
   const [loginDisplayed, setLoginDisplayed] = useState(true)
-  // const [userId, setUserId] = useState('')
-  // const [userData, setUserData] = useState([])
   const [userName, setUserName] = useState('')
   const [loggedIn, setLoggedIn] = useState(false)
 
@@ -40,21 +37,9 @@ function App() {
 
   const auth = getAuth()
   onAuthStateChanged(auth, (user) => {
-    user != null ? setLoggedIn(true) : setLoggedIn(false)
+    if (user === null) return
+    setLoggedIn(true)
     loggedIn ? setUserName(user.displayName) : setUserName('')
-    // loggedIn ? setUserId(user.uid) : console.log('no user logged in')
-    // const dbRef = ref(getDatabase())
-    // get(child(dbRef, `users/${userId}`))
-    //   .then((snapshot) => {
-    //     if (snapshot.exists()) {
-    //       console.log(snapshot.val())
-    //     } else {
-    //       console.log('No data available')
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     console.error(error)
-    //   })
   })
 
   return (
@@ -85,6 +70,7 @@ function App() {
         profileVisible={profileVisible}
         setLoggedIn={setLoggedIn}
         userName={userName}
+        setUserName={setUserName}
       />
       <Order />
     </>

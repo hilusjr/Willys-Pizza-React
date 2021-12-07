@@ -3,7 +3,13 @@ import { getAuth, signOut } from 'firebase/auth'
 
 import '../css/Profile.css'
 
-function Profile({ displayProfile, profileVisible, setLoggedIn, userName }) {
+function Profile({
+  displayProfile,
+  profileVisible,
+  setLoggedIn,
+  userName,
+  setUserName,
+}) {
   const logout = () => {
     const auth = getAuth()
     signOut(auth)
@@ -38,6 +44,7 @@ function Profile({ displayProfile, profileVisible, setLoggedIn, userName }) {
           onClick={() => {
             logout()
             displayProfile()
+            setUserName(null)
           }}
         >
           log out

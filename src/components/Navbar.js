@@ -1,22 +1,16 @@
 import React, { useState } from 'react'
-import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import Navbtn from './Navbtn'
 import '../css/Navbar.css'
 
-function Navbar({ displayCard }) {
+function Navbar({ displayCard, loggedIn, displayProfile, userName }) {
   const navBtns = ['start', 'hot deals', 'menu', 'about', 'contact']
   const [isVisible, setVisible] = useState(false)
   const [isActive, setActive] = useState('start')
-  const [loggedIn, setLoggedIn] = useState(false)
 
   const closeMobileMenu = () => {
     setVisible(!isVisible)
   }
 
-  const auth = getAuth()
-  onAuthStateChanged(auth, (user) => {
-    user != null ? setLoggedIn(true) : setLoggedIn(false)
-  })
   return (
     <>
       <div className="toggle-menu" onClick={closeMobileMenu}>
@@ -40,10 +34,14 @@ function Navbar({ displayCard }) {
           >
             Log in
           </div>
-          <div className="nav-profile-icon">
+          <div
+            className="nav-profile-icon"
+            onClick={displayProfile}
+            style={loggedIn ? { display: 'block' } : { display: 'none' }}
+          >
             <i className="fa-solid fa-user"></i>
           </div>
-          <div className="nav-profile-name"></div>
+          <div className="nav-profile-name">{userName}</div>
         </div>
         <div className="navigation">
           {navBtns.map((navBtn) => (

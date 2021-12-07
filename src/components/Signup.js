@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from 'firebase/auth'
 import { getDatabase, ref, set } from 'firebase/database'
 
 function Signup({ displayLogin }) {
@@ -18,6 +22,17 @@ function Signup({ displayLogin }) {
         const user = userCredential.user
         const userId = user.uid
         writeUserData(userId)
+        updateProfile(auth.currentUser, {
+          displayName: username,
+        })
+          .then(() => {
+            // Profile updated!
+            // ...
+          })
+          .catch((error) => {
+            // An error occurred
+            console.log(error)
+          })
       })
       .catch((error) => {
         const errorCode = error.code
@@ -75,7 +90,14 @@ function Signup({ displayLogin }) {
         value={city}
         onInput={(e) => setCity(e.target.value)}
       ></input>
-      <button onClick={signup}>Sign up</button>
+      <button
+        onClick={() => {
+          signup()
+          displayLogin()
+        }}
+      >
+        Sign up
+      </button>
       <p>Already have an account?</p>
       <button onClick={displayLogin}>Log in</button>
       {/* <p>

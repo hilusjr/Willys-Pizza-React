@@ -1,0 +1,80 @@
+.profile-card-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.835);
+  z-index: 9999;
+}
+
+.profile-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: white;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.profile-card i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.profile-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.profile-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.profile-card h4 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card button {
+  width: 100%;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  color: white;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0.1rem 0;
+  background: linear-gradient(
+    164deg,
+    rgba(255, 245, 38, 1) 0%,
+    rgba(240, 137, 21, 1) 50%,
+    rgba(221, 0, 0, 1) 100%
+  );
+  border-radius: 0.5rem;
+}
+
+.profile-card button:last-of-type {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    position: fixed;
+    top: 10%;
+    left: calc(50% - 20rem);
+    width: 40rem;
+    height: auto;
+    max-height: 80vh;
+    border-radius: 1rem;
+  }
+}

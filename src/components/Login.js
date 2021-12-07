@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 
 function Login({ displaySignup, displayCard }) {
   const [email, setEmail] = useState('')
@@ -19,16 +19,6 @@ function Login({ displaySignup, displayCard }) {
       })
   }
 
-  const logout = () => {
-    const auth = getAuth()
-    signOut(auth)
-      .then(() => {
-        // Sign-out successful.
-      })
-      .catch((error) => {
-        // An error happened.
-      })
-  }
   return (
     <>
       <h1>Log in</h1>
@@ -48,7 +38,6 @@ function Login({ displaySignup, displayCard }) {
       <button onClick={login}>Log in</button>
       <p>Don't have an account?</p>
       <button onClick={displaySignup}>Sign up</button>
-      <button onClick={logout}>Log out</button>
     </>
   )
 }

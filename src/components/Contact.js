@@ -34,7 +34,7 @@ function Contact({ displayCard, displaySignup }) {
         Create or log into an already existing account to order our products
         EASELY and get a chance to get even more HOT DEALS
       </h3>
-      <div>
+      <div style={loggedIn ? { display: 'none' } : { display: 'flex' }}>
         <button
           className="contact-page-button sign-up-button"
           onClick={() => {

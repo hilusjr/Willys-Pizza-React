@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 import Navbtn from './Navbtn'
 import '../css/Navbar.css'
 
-function Navbar({ displayCard, loggedIn, displayProfile, userName }) {
+function Navbar({
+  displayCard,
+  loggedIn,
+  displayProfile,
+  userName,
+  displayOrder,
+}) {
   const navBtns = ['start', 'hot deals', 'menu', 'about', 'contact']
   const [isVisible, setVisible] = useState(false)
   const [isActive, setActive] = useState('start')
@@ -21,6 +27,7 @@ function Navbar({ displayCard, loggedIn, displayProfile, userName }) {
           <div
             className="nav-order-btn nav-acc-btn"
             style={loggedIn ? { display: 'block' } : { display: 'none' }}
+            onClick={displayOrder}
           >
             order
           </div>

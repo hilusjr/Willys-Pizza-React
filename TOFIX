@@ -1,0 +1,3 @@
+intersection observer on scrolling (navbtns stay active at all times)
+order card is not finished (chosen items share the same menu position when going through submenus)
+get userdata from database (no custom values are being downloaded other than default firebase user properties)

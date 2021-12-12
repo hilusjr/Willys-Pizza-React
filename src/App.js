@@ -15,6 +15,7 @@ import Order from './components/Order'
 function App() {
   const [cardVisible, setCardVisible] = useState(false)
   const [profileVisible, setProfileVisible] = useState(false)
+  const [orderVisible, setOrderVisible] = useState(false)
   const [loginDisplayed, setLoginDisplayed] = useState(true)
   const [userName, setUserName] = useState('')
   const [loggedIn, setLoggedIn] = useState(false)
@@ -34,6 +35,9 @@ function App() {
   const displayProfile = () => {
     setProfileVisible(!profileVisible)
   }
+  const displayOrder = () => {
+    setOrderVisible(!orderVisible)
+  }
 
   const auth = getAuth()
   onAuthStateChanged(auth, (user) => {
@@ -48,6 +52,7 @@ function App() {
         displayCard={displayCard}
         loggedIn={loggedIn}
         displayProfile={displayProfile}
+        displayOrder={displayOrder}
         userName={userName}
         // userData={userData}
       />
@@ -72,7 +77,7 @@ function App() {
         userName={userName}
         setUserName={setUserName}
       />
-      <Order />
+      <Order displayOrder={displayOrder} orderVisible={orderVisible} />
     </>
   )
 }
